@@ -1,4 +1,5 @@
-## Simple Authentication Mod
+## Simple Authentication Mod for 1.17
+
 [<img src="https://i.imgur.com/Ol1Tcf8.png" alt="Requires Fabric API." width="200px" href="https://www.curseforge.com/minecraft/mc-mods/fabric-api">](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
 
 
