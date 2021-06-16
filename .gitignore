@@ -7,13 +7,6 @@ build/
 out/
 classes/
 
-# idea
-
-.idea/
-*.iml
-*.ipr
-*.iws
-
 # vscode
 
 .settings/
