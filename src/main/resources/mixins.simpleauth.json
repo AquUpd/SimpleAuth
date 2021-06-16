@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "package": "org.samo_lego.simpleauth.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [],
+  "server": [
+    "MixinPlayerAdvancementTracker",
+    "MixinPlayerEntity",
+    "MixinPlayerManager",
+    "MixinServerLoginNetworkHandler",
+    "MixinServerPlayerEntity",
+    "MixinServerPlayNetworkHandler",
+    "MixinSlot",
+    "MixinWorldSaveHandler",
+    "ServerStatHandlerAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
