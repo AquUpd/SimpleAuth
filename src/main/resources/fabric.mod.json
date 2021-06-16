@@ -10,8 +10,7 @@
 	"AqUpd"
   ],
   "contact": {
-    "homepage": "https://samolego.github.io/projects",
-    "sources": "https://github.com/samolego/SimpleAuth"
+    "sources": "https://github.com/AquUpd/SimpleAuth"
   },
 
   "license": "MIT",
