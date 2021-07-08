@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Slot.class)
 public abstract class MixinSlot {
+
     // Denying item moving etc.
     @Inject(method = "canTakeItems(Lnet/minecraft/entity/player/PlayerEntity;)Z", at = @At(value = "HEAD"), cancellable = true)
     private void canTakeItems(PlayerEntity playerEntity, CallbackInfoReturnable<Boolean> cir) {
@@ -24,10 +25,16 @@ public abstract class MixinSlot {
             player.networkHandler.sendPacket(
                     new ScreenHandlerSlotUpdateS2CPacket(
                             -2,
+                            player.playerScreenHandler.getRevision(),
                             player.getInventory().selectedSlot,
                             player.getInventory().getStack(player.getInventory().selectedSlot))
             );
-            player.networkHandler.sendPacket(new ScreenHandlerSlotUpdateS2CPacket(-1, -1, player.currentScreenHandler.getCursorStack()));
+            player.networkHandler.sendPacket(new ScreenHandlerSlotUpdateS2CPacket(
+                    -1,
+                    player.playerScreenHandler.getRevision(),
+                    -1,
+                    player.currentScreenHandler.getCursorStack())
+            );
             cir.setReturnValue(false);
         }
     }

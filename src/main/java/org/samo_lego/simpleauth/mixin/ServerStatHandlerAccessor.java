@@ -10,8 +10,5 @@ import java.io.File;
 public interface ServerStatHandlerAccessor {
 
     @Accessor("file")
-    File getFile();
-
-    @Accessor("file")
     void setFile(File file);
 }

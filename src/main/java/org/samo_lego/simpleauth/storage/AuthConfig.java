@@ -161,7 +161,7 @@ public class AuthConfig {
          * This protects premium usernames from being stolen, since cracked players
          * with name that is found in Mojang database, are kicked.
          */
-        public boolean premiumAutologin = false;
+        public boolean premiumAutologin = true;
 
         /**
          * Contains a list of lower case (!) player names
