@@ -1,3 +1,6 @@
+
+# You better use this fork: https://github.com/NikitaCartes/SimpleAuth
+
 ## Simple Authentication Mod for 1.17
 
 ### This mod isn't ready!
